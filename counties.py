@@ -28,9 +28,8 @@ def clean_county_text(text, state_name):
 
 """
 Scrapes county data for every state
-Returns:
-    - A list of tuples: [(state_name, [list of county_names]), ...],
-        (List and not dict because we want these in the order we read them.)
+Prints to console in this format:
+    [{'state': 'Alabama', 'counties': ['county1', 'county2']}]
 """
 def scrape(link=LINK):
     # get page html
